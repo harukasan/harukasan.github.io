@@ -1,0 +1,33 @@
+nav.side-nav
+  ul.nav
+    li.harukasan
+      a href="#profile-page"
+        img#haruneko src="images/haruneko.png" title="harukasan"
+    li
+      a.publications href="#publications-page"
+        i.fa.fa-microphone
+    li
+      a.qiita href="#qiita-page"
+        i.fa.fa-terminal
+    li
+      a.twitter href="#twitter-page"
+        i.fa.fa-twitter
+
+.main
+  section.page.profile-page#profile-page
+    = partial "_index/profile"
+
+  section.page.publications-page#publications-page
+    = partial "_index/publications"
+
+  section.page.qiita-page#qiita-page
+    = partial "_index/qiita"
+
+  section.page.twitter-page#twitter-page
+    h1#twitter
+      | Tweets
+      span.twitter-button
+        = partial "_index/twitter_button"
+    .twitter-widget
+      = partial "_index/twitter"
+

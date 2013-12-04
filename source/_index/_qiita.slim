@@ -1,0 +1,17 @@
+h1#qiita Qiita
+p 
+  | My technical knowledge and tips are posted to <a href="http://qiita.com/harukasan">Qiita</a>, a knowledge sharing service.
+div.qiita-entries
+script#qiita-entries-template type="text/template"
+  | {{#items}}
+  div 
+    h2
+      a href="{{url}}"
+        | {{title}}
+    .status
+      span.date
+        | {{updated_at}}
+      span.stock
+        i.fa.fa-folder-o
+        | {{stock_count}}
+  | {{/items}}

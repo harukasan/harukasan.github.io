@@ -1,0 +1,302 @@
+/*
+
+# Font size
+
+- 64px
+- 32px
+- 20px
+- 16px
+- 12px
+
+# Font weights
+
+## Lato
+- 100
+- 300
+- 400
+- 700
+- 900
+
+# Opacity
+
+- 1.0
+- 0.6
+- 0.3
+
+*/
+
+/* common elements */
+
+html, body{
+  height: 100%;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 64px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 32px;
+}
+
+p {
+  font-size: 20px;
+}
+
+li {
+  font-size: 20px;
+}
+
+a {
+  color: #244d70;
+  font-weight: 400;
+}
+
+
+/* specific compornents */
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+
+  background: #3C4244;
+
+  .nav {
+    margin: 0 auto;
+    list-style-type: none;
+
+    .harukasan {
+      margin: 30px 0 20px;
+      padding: 0;
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      color: #ddd;
+      font-size: 32px;
+
+      &:hover {
+        background: rgba(0,0,0,0.1);
+      }
+      &:focus {
+        background: rgba(255,255,255,0.2);
+        outline: 0;
+      }
+    }
+
+    .active {
+      a {
+        color: #fff;
+      }
+      a.publications {
+        color: #e3d53f;
+      }
+      a.blog {
+        color: #3f75e3;
+      }
+      a.qiita {
+        color: #88e33f;
+      }
+      a.twitter {
+        color: #3fc2e3;
+      }
+    }
+  }
+}
+
+.main {
+  margin-left: 150px;
+  height: 100%;
+}
+
+.page {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 30px 80px 20px 30px;
+  box-sizing: border-box;
+  font-weight: 300;
+
+  ::selection {
+    background: #fff;
+  }
+
+  &:nth-child(even) {
+    background: #ddd;
+  }
+  &:nth-child(odd) {
+    background: #fff;
+  }
+}
+
+.page.profile-page {
+  background: #90b6d7;
+
+  hgroup {
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    h1 {
+      display: inline-block;
+      margin-right: 10px;
+      color: #fff;
+    }
+
+    h2 {
+      display: inline-block;
+      font-size: 64px;
+      font-weight: 100;
+      color: #fff;
+    }
+
+    abbr {
+      opacity: 0.6;
+      text-decoration: none;
+      border: 0;
+    }
+  }
+
+  .skills {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      &:after {
+        content: ", ";
+      }
+      &:last-child:after {
+        content: "";
+      }
+    }
+  }
+
+  .education {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    ul {
+      margin: 0 0 10px 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        opacity: 0.6;
+      }
+    }
+
+    .term {
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+}
+
+.page.publications-page {
+  .slides {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    .slide {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 5px;
+      background: #f0f0f0;
+
+      img {
+        width: 160px;
+        height: 120px;
+      }
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .popover {
+      margin-top: 2px;
+      box-shadow: none;
+      border: 0 none;
+      white-space: nowrap;
+
+      .arrow {
+        box-shadow: none;
+      }
+
+      .popover-content {
+        text-align: left;
+
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+
+          li {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page.qiita-page {
+  background: #f3f6f1;
+
+  .qiita-entries {
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+
+    }
+
+    .date {
+      margin-right: 5px;
+    }
+  }
+}
+
+.page.twitter-page {
+  h1 {
+    width: 100%;
+    max-width: 1000px;
+  }
+  .twitter-button {
+    float: right;
+    margin: 0 0 -5px;
+  }
+  .twitter-widget {
+    iframe {
+      width: 100%;
+      max-width: 1000px;
+    }
+  }
+}
+
+.page.power-off-page {
+  background: #212526;
+
+
+  h1 {
+    font-size: 128px;
+    color: #11cd2a;
+    text-shadow: 0 0 10px #0ea522;
+  }
+}
+
