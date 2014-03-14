@@ -317,3 +317,24 @@ a:hover {
 .select_star_button_container {
   margin-left: 20px;
 }
+
+.page-about {
+  dl {
+    font-size: 20px;
+
+    dt {
+      float: left;
+      width: 200px;
+      margin: 8px 20px;
+      text-align: right;
+      font-weight: bold;
+    }
+    dd {
+      margin-bottom: 24px;
+      padding: 8px 0;
+      font-size: 20px;
+    }
+  }
+}
+
+
