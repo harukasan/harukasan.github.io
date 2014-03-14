@@ -99,6 +99,9 @@ a {
       a {
         color: $white;
       }
+      a.careers {
+        color: #e16cc8;
+      }
       a.publications {
         color: #e3d53f;
       }
@@ -179,7 +182,10 @@ a {
     }
   }
 
-  .education {
+}
+
+.page.careers-page {
+  .history {
     margin: 0;
     padding: 0;
 
@@ -191,13 +197,8 @@ a {
       list-style-type: none;
 
       li {
-        opacity: 0.6;
+        font-size: 16px;
       }
-    }
-
-    .term {
-      color: $white;
-      opacity: 0.6;
     }
   }
 }
@@ -291,7 +292,7 @@ a {
 }
 
 .page.qiita-page {
-  background: #f3f6f1;
+  background: #e4f1de;
 
   .qiita-entries {
     h2 {
@@ -307,10 +308,8 @@ a {
 }
 
 .page.twitter-page {
-  h1 {
-    width: 100%;
-    max-width: 1000px;
-  }
+  background: #c4dff1;
+
   .twitter-button {
     float: right;
     margin: 0 0 -5px;
@@ -318,7 +317,6 @@ a {
   .twitter-widget {
     iframe {
       width: 100%;
-      max-width: 1000px;
     }
   }
 }

@@ -4,6 +4,9 @@ nav.side-nav
       a href="#profile-page"
         img#haruneko src="images/haruneko.png" title="harukasan"
     li
+      a.careers href="#careers-page"
+        i.fa.fa-user
+    li
       a.publications href="#publications-page"
         i.fa.fa-microphone
     li
@@ -21,6 +24,10 @@ nav.side-nav
     .page-inner
       = partial "_index/profile"
 
+  section.page.careers-page#careers-page
+    .page-inner
+      = partial "_index/careers"
+
   section.page.publications-page#publications-page
     .page-inner
       = partial "_index/publications"
@@ -34,10 +41,11 @@ nav.side-nav
       = partial "_index/qiita"
 
   section.page.twitter-page#twitter-page
-    h1#twitter
-      | Tweets
-      span.twitter-button
-        = partial "_index/twitter_button"
-    .twitter-widget
-      = partial "_index/twitter"
+    .page-inner
+      h1#twitter
+        | Tweets
+        span.twitter-button
+          = partial "_index/twitter_button"
+      .twitter-widget
+        = partial "_index/twitter"
 

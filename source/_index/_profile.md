@@ -8,29 +8,37 @@ I've been Software Developement, Operation, and Network Engineer at [pixiv Inc.]
 
 ## Skills
 
+### Programming language
+
 {:.skills}
-- Ruby
-- PHP
+- [Ruby](https://www.ruby-lang.org)
+- [PHP](http://www.php.net)
+- [CoffeeScript](http://coffeescript.org)
 - JavaScript
-- CoffeeScript
-- HTML5
-- CSS3
-- Bash
-- Ruby on Rails
-- nginx
+- HTML5 / CSS3
+
+### Server-side technology
+
+{:.skills}
+- [nginx](http://nginx.org)
+- [Apache httpd](http://httpd.apache.org)
+- [Apache Traffic Server](http://trafficserver.apache.org)
+- [Debian](http://www.debian.org)
+- [Amazon EC2](http://aws.amazon.com)
+
+### Data Analysis, Monitoring
+
+{:.skills}
+- [Elasticsearch](http://www.elasticsearch.org) / [Kibana](http://www.elasticsearch.org/overview/kibana/)
+- [Fluentd](http://fluentd.org)
+- [GrowthForecast](http://kazeburo.github.io/GrowthForecast/)
+- [Nagios3](http://www.nagios.org)
+- [Munin](http://munin-monitoring.org)
+
+### Developer tools
+
+{:.skills}
+- Vim
 - Git
 - Subversion
 - Mac OS X
-- Debian GNU/Linux
-- Aruduino
-
-## Education
-
-{:.education}
-- [Kurume National College of Technlogy](http://www.kurume-nct.ac.jp/) <span class="term">2003-2008</span>
-  - Dept. of Control and Information Systems Engineering
-- [Kyushu Institute of Technology](http://www.kyutech.ac.jp/) <span class="term">2008-2010</span>
-  - BA., at Dept. of Artificial Intelligence
-- [University of Tsukuba](http://www.tsukuba.ac.jp) <span class="term">2010-2012</span>
-  - MS. Eng., at Dept. of Computer Science, Graduate school of SIE.
-
