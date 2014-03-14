@@ -1,0 +1,319 @@
+@import "compass";
+@import "compass/reset";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+$white: #fff;
+$black: #000;
+
+/*
+ * General
+ */
+
+body {
+  background: $white;
+  font-family: "Lato", "Helvetica neue", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+a {
+  color: #4b96d6;
+  text-decoration: none;
+  transition: all 1s ease;
+  -webkit-transition: all 0.3s ease;
+}
+a:hover {
+  color: lighten(#4b96d6, 10%);
+  text-decoration: none;
+}
+
+/*
+ * Side nav.
+ */
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+  background: #3C4244;
+
+  .nav {
+    margin: 0 auto;
+    list-style-type: none;
+
+    .harukasan {
+      margin: 30px 0 20px;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+/*
+ * Container
+ */
+
+#container {
+  margin-left: 190px;
+  padding: 0 30px 40px 4px; // 4px for hatena quoted star
+}
+
+#blog-title {
+  margin: 70px 0 80px -4px; // -4px for first letter pos
+  font-family: "Lato", "Helvetica neue", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+
+  a {
+    color: $black;
+  }
+}
+
+/*
+ * Main block
+ */
+
+#main {
+  max-width: 800px;
+
+  h1,h2,h3,h4 {
+    margin: 24px 0;
+    line-height: 1.3;
+  }
+  h1 {
+    font-size: 32px;
+
+    a {
+      color: $black;
+    }
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+
+    ol {
+      list-style-type: lower-alpha;
+    }
+  }
+
+  ul, ol {
+    margin: 24px 0;
+
+    ul, ol {
+      margin: 0;
+    }
+    li {
+      margin: 0 24px;
+    }
+  }
+
+  pre.code {
+    padding: 10px;
+    margin: 24px 0;
+    border: 1px #ccc solid;
+    background: #eee;
+    font-family: 'Inconsolata', 'Menlo', monospace;
+    font-size: 14px;
+  }
+
+  code {
+    padding: 2px;
+    border: 0 none;
+    background: #eee;
+    font-family: 'Inconsolata', 'Menlo', monospace;
+    font-size: 12px;
+  }
+
+  .box {
+    margin: 24px 0;
+    width: 600px;
+  }
+
+  .entry-inner {
+    position: relative;
+
+    .entry-header {
+      overflow: hidden;
+      margin: 48px 0 24px;
+
+      h1 {
+        margin: 0 0 20px 102px;
+        padding: -1px 0 4px 8px;
+      }
+
+      .date {
+        float: left;
+        width: 80px;
+        padding: 12px 8px 38px;
+        border-radius: 4px;
+        background: #c32621;
+
+        a {
+          color: $white;
+        }
+        .hyphen {
+          display: none;
+        }
+        .date-year {
+          display: block;
+          margin-bottom: 4px;
+          font-size: 12px;
+        }
+        .date-month {
+          font-size: 20px;
+        }
+        .date-month:after {
+          content: '-';
+        }
+        .date-day {
+          font-size: 20px;
+        }
+      }
+
+      .entry-header-menu {
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        left: -100px;
+        padding: 8px;
+        border-radius: 4px;
+        background: $white;
+      }
+    }
+
+    .entry-content {
+      margin-top: 64px;
+    }
+
+    .entry-footer {
+      .entry-footer-section {
+        margin-top: 48px;
+
+        .author {
+          margin: 0 10px;
+
+          &:before {
+            content: ' ';
+            display: inline-block;
+            width: 96px;
+            border-bottom: 4px #ccc solid;
+            margin-right: 10px;
+          }
+          &:after {
+            content: '/';
+            display: inline-block;
+            margin: 0 5px;
+          }
+        }
+      }
+
+      .hatena-star-container {
+        position: absolute;
+        top: 118px;
+        left: -1px;
+        margin: 0;
+      }
+      .customized-footer {
+        position: absolute;
+        top: 94px;
+
+        .facebook-like-button {
+          margin-bottom: -1px;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * Profile (below title)
+ */
+
+.hatena-module-profile {
+  position: absolute;
+  top: 144px;
+  left: 194px;
+  border-radius: 4px;
+
+  .hatena-module-title {
+    display: none;
+  }
+
+  .profile-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .id {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 10px 8px 0;
+    font-size: 14px;
+
+    .user-name-paren,
+    .user-name-hatena-id,
+    .icon-pro {
+      display: none;
+    }
+
+    &:before {
+      content: 'Author:';
+      font-weight: bold;
+    }
+  }
+
+  .hatena-follow-button-box {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+/*
+ * Search box
+ */
+.hatena-module-search-box {
+  position: absolute;
+  top: 0;
+  padding: 5px 20px;
+  border-radius: 0 0 4px 4px;
+  background: #ccc;
+
+  .hatena-module-title {
+    display: none;
+  }
+
+  .search-module-input {
+    width: 400px;
+    border: 1px #eee solid;
+    padding: 4px;
+    font-size: 12px;
+  }
+  .search-module-button {
+    padding: 2px 8px;
+    border: 1px #eee solid;
+    font-size: 12px;
+  }
+}
+
+.select_star_button_container {
+  margin-left: 20px;
+}
