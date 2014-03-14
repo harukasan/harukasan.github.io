@@ -1,5 +1,6 @@
 //= require bootstrap/scrollspy
+//= require bootstrap/tooltip
+//= require bootstrap/popover
 //= require qiita
-//= require_tree .
-
-
+//= require feed
+//= require main

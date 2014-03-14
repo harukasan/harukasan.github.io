@@ -1,14 +1,34 @@
-#= require bootstrap/scrollspy
-#= require bootstrap/tooltip
-#= require bootstrap/popover
-#= require qiita
+google.load "feeds", "1"
+
+Index =
+  renderQiita: ->
+    Qiita.items "harukasan", (data) ->
+      # console.log data
+      template = Hogan.compile $('#qiita-entries-template').text()
+      $(".qiita-entries").append template.render(items: data[0..4])
+
+  renderFeed: ->
+    toDD = (int) ->
+      if int < 10 then "0#{int}" else "#{int}"
+
+    Feed.items "http://blog.harukasan.jp/feed", (feed) ->
+      console.log feed
+      template = Hogan.compile $('#blog-entries-template').text()
+      items = []
+      for entry in feed.entries[0..4]
+        date = new Date entry.publishedDate
+        items.push
+          year: date.getFullYear()
+          month: toDD date.getMonth()
+          day: toDD date.getDay()
+          title: entry.title
+          content: entry.contentSnippet
+          link: entry.link
+      $(".blog-entries").append template.render(items: items)
 
 $(document).ready ->
-  Qiita.items "harukasan", (data) ->
-    console.log data
-    template = Hogan.compile($('#qiita-entries-template').text())
-    $(".qiita-entries").append(template.render(items: data[0..4]))
-
+  Index.renderQiita()
+  Index.renderFeed()
   $(".slide-popover").popover()
 
   $(window).scroll ->

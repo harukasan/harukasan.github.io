@@ -25,6 +25,9 @@
 
 */
 
+$base: #333;
+$white: #fff;
+
 /* common elements */
 
 html, body{
@@ -94,7 +97,7 @@ a {
 
     .active {
       a {
-        color: #fff;
+        color: $white;
       }
       a.publications {
         color: #e3d53f;
@@ -123,22 +126,15 @@ a {
   min-height: 100%;
   padding: 30px 80px 20px 30px;
   box-sizing: border-box;
-  font-weight: 300;
 
-  ::selection {
-    background: #fff;
-  }
-
-  &:nth-child(even) {
-    background: #ddd;
-  }
-  &:nth-child(odd) {
-    background: #fff;
+  .page-inner {
+    max-width: 950px;
   }
 }
 
 .page.profile-page {
   background: #90b6d7;
+  font-weight: 300;
 
   hgroup {
     margin: 0 0 20px 0;
@@ -147,20 +143,21 @@ a {
     h1 {
       display: inline-block;
       margin-right: 10px;
-      color: #fff;
+      color: $white;
+      font-size: 64px;
+      font-weight: 400;
     }
 
     h2 {
       display: inline-block;
-      font-size: 64px;
-      font-weight: 100;
-      color: #fff;
+      font-weight: 300;
+      color: $white;
     }
 
     abbr {
-      opacity: 0.6;
       text-decoration: none;
       border: 0;
+      font-weight: 100;
     }
   }
 
@@ -199,13 +196,15 @@ a {
     }
 
     .term {
-      color: #fff;
+      color: $white;
       opacity: 0.6;
     }
   }
 }
 
 .page.publications-page {
+  background: #e1ceb6;
+
   .slides {
     margin: 0;
     padding: 0;
@@ -251,6 +250,41 @@ a {
             font-weight: 400;
           }
         }
+      }
+    }
+  }
+}
+
+.page.blog-page {
+  background: $white;
+
+  .date {
+    float: left;
+    display: block;
+    width: 60px;
+    margin-right: 8px;
+    padding: 0 4px;
+    border-radius: 4px;
+    background: #c32621;
+    color: $white;
+
+    .year {
+      display: block;
+      font-size: 10px;
+    }
+    .month {
+      font-size: 16px;
+    }
+    .month:after {
+      content: '-';
+    }
+    .day {
+      font-size: 16px;
+    }
+
+    h2 {
+      a {
+        color: $base;
       }
     }
   }

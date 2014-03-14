@@ -7,6 +7,9 @@ nav.side-nav
       a.publications href="#publications-page"
         i.fa.fa-microphone
     li
+      a.blog href="#blog-page"
+        i.fa.fa-file-text-o
+    li
       a.qiita href="#qiita-page"
         i.fa.fa-terminal
     li
@@ -15,13 +18,20 @@ nav.side-nav
 
 .main
   section.page.profile-page#profile-page
-    = partial "_index/profile"
+    .page-inner
+      = partial "_index/profile"
 
   section.page.publications-page#publications-page
-    = partial "_index/publications"
+    .page-inner
+      = partial "_index/publications"
+
+  section.page.blog-page#blog-page
+    .page-inner
+      = partial "_index/blog"
 
   section.page.qiita-page#qiita-page
-    = partial "_index/qiita"
+    .page-inner
+      = partial "_index/qiita"
 
   section.page.twitter-page#twitter-page
     h1#twitter
