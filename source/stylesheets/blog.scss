@@ -242,8 +242,14 @@ a:hover {
         position: absolute;
         top: 94px;
 
+        .hatena-bookmark-button-frame {
+          margin-right: 10px;
+        }
         .facebook-like-button {
-          margin-bottom: -1px;
+          margin: 0 -40px -1px 0;
+        }
+        .twitter-share-button {
+          margin-right: -20px;
         }
       }
     }
