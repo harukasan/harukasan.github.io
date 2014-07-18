@@ -2,6 +2,8 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
+gem "rake"
+
 gem "middleman", "~>3.2.0"
 
 # Live-reloading plugin
