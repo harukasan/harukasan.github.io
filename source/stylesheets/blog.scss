@@ -110,6 +110,7 @@ a:hover {
     font-size: 20px;
   }
   p {
+    margin: 10px 0;
     text-align: justify;
     text-justify: inter-ideograph;
     line-height: 24px;
@@ -134,7 +135,7 @@ a:hover {
       margin: 0;
     }
     li {
-      margin: 0 24px;
+      margin: 8px 24px;
     }
   }
 
@@ -373,4 +374,11 @@ a:hover {
   }
 }
 
+.hatena-asin-detail-info {
+  margin-left: 120px;
 
+  li {
+    margin: 8px 0;
+    list-style-type: none;
+  }
+}
