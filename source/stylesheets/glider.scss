@@ -136,11 +136,11 @@ a {
 }
 
 .page.profile-page {
-  background: #90b6d7;
+  background: #77B4E9;
   font-weight: 300;
 
   hgroup {
-    margin: 0 0 20px 0;
+    margin-left: -4px;
     padding: 0;
 
     h1 {
@@ -161,6 +161,21 @@ a {
       text-decoration: none;
       border: 0;
       font-weight: 100;
+    }
+  }
+
+  .links {
+    margin: 0 0 10px 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding-right: 5px;
+      font-size: 32px;
+
+      a {
+        color: #fff;
+      }
     }
   }
 
@@ -185,6 +200,7 @@ a {
 }
 
 .page.careers-page {
+  background: #ABCEED;
   .history {
     margin: 0;
     padding: 0;

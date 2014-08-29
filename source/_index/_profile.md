@@ -4,6 +4,14 @@
   <h2><abbr class="aka" title="as known as">aka</abbr> MICHII Shunsuke</h2>
 </hgroup>
 
+{:.links}
+- [<i class="fa fa-twitter-square" title="@harukasan"></i>](https://twitter.com/harukasan){:.twitter}
+- [<i class="fa fa-facebook-square" title="facebook:shunsuke.michii"></i>](https://facebook.com/shunsuke.michii){:.facebook}
+- [<i class="fa fa-github-square" title="github:harukasan"></i>](https://github.com/harukasan){:.github}
+- [<i class="fa fa-linkedin-square" title="linkedin:harukasan"></i>](http://www.linkedin.com/in/harukasan){:.github}
+
+
+
 I've been Software Developement, Operation, and Network Engineer at [pixiv Inc.](http://www.pixiv.co.jp/) in Tokyo, JAPAN.
 
 ## Skills
