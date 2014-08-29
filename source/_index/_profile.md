@@ -20,6 +20,7 @@ I've been Software Developement, Operation, and Network Engineer at [pixiv Inc.]
 
 {:.skills}
 - [Ruby](https://www.ruby-lang.org)
+- [RubyMotion](http://www.rubymotion.com)
 - [PHP](http://www.php.net)
 - [CoffeeScript](http://coffeescript.org)
 - JavaScript
@@ -40,8 +41,8 @@ I've been Software Developement, Operation, and Network Engineer at [pixiv Inc.]
 - [Elasticsearch](http://www.elasticsearch.org) / [Kibana](http://www.elasticsearch.org/overview/kibana/)
 - [Fluentd](http://fluentd.org)
 - [GrowthForecast](http://kazeburo.github.io/GrowthForecast/)
-- [Nagios3](http://www.nagios.org)
 - [Munin](http://munin-monitoring.org)
+- [Google BigQuery](https://cloud.google.com/products/bigquery/)
 
 ### Developer tools
 
