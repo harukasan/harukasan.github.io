@@ -250,29 +250,53 @@ a {
       margin: 0;
       padding: 0;
     }
+  }
 
-    .popover {
-      margin-top: 2px;
-      box-shadow: none;
-      border: 0 none;
-      white-space: nowrap;
+  .books {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
-      .arrow {
-        box-shadow: none;
+    .book {
+      display: inline-block;
+      margin: 0 10px 10px 0;
+      padding: 5px;
+      background: #f0f0f0;
+
+      img {
+        height: 200px;
       }
+    }
 
-      .popover-content {
-        text-align: left;
+    a {
+      margin: 0;
+      padding: 0;
+    }
+  }
 
-        ul {
-          margin: 0;
-          padding: 0;
-          list-style-type: none;
 
-          li {
-            font-size: 14px;
-            font-weight: 400;
-          }
+  .popover {
+    margin-top: 2px;
+    box-shadow: none;
+    border: 0 none;
+    // white-space: nowrap;
+    padding: 0;
+
+    .arrow {
+      box-shadow: none;
+    }
+
+    .popover-content {
+      text-align: left;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+          font-size: 14px;
+          font-weight: 400;
         }
       }
     }
