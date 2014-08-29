@@ -338,8 +338,8 @@ a {
     margin: 0 0 -5px;
   }
   .twitter-widget {
-    iframe {
-      width: 100%;
+    iframe.twitter-timeline {
+      width: 100% !important;
     }
   }
 }
