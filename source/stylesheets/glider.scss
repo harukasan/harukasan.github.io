@@ -278,7 +278,7 @@ a {
   .popover {
     margin-top: 2px;
     box-shadow: none;
-    border: 0 none;
+    border: 1px #ccc solid;
     // white-space: nowrap;
     padding: 0;
 
@@ -295,7 +295,7 @@ a {
         list-style-type: none;
 
         li {
-          font-size: 14px;
+          font-size: 12px;
           font-weight: 400;
         }
       }
