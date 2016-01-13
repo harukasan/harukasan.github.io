@@ -1,0 +1,1 @@
+(function(){var t;t=function(){function t(){}return t.prototype.items=function(t,i){return $.ajax({type:"GET",url:"https://qiita.com/api/v1/users/"+t+"/items",success:i})},t}(),window.Qiita=new t}).call(this);

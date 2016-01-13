@@ -1,0 +1,1 @@
+(function(){window.Feed={items:function(e,r){return new google.feeds.Feed(e).load(function(e){return e.error?console.error(error.message):r(e.feed)})}}}).call(this);
