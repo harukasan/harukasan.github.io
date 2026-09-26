@@ -1,4 +1,4 @@
-harukasan.jp
-============
+harukasan.github.io
+===================
 
-The new harukasan.jp
+`public/` 以下の静的ファイルを GitHub Actions で GitHub Pages にデプロイしています。
